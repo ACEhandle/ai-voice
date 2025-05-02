@@ -1,0 +1,5 @@
+
+whisper
+torch
+sounddevice
+numpy
