@@ -3,3 +3,4 @@ whisper
 torch
 sounddevice
 numpy
+pyttsx3
