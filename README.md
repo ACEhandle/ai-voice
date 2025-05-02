@@ -10,6 +10,11 @@
 - **Record audio** from the microphone using `sounddevice`.
 - **Transcribe audio** to text using OpenAI Whisper (supports English by default).
 - **Output transcription** as both printed text and spoken audio using `pyttsx3`.
+- **Voice command actions**: Use recognized speech to trigger automation, including:
+  - Mouse clicks (single, double, move to position)
+  - Click on-screen elements by image recognition (e.g., "click by image ok_button.png")
+  - Switch windows ("switch window", "alt tab")
+  - Open programs by name (e.g., "open notepad")
 - **Handles ffmpeg dependency** for Whisper audio processing.
 - Modular code structure for future integration with AI models or other applications.
 
@@ -26,6 +31,16 @@
 - numpy
 - soundfile
 - pyttsx3
+- pyautogui
+## Voice Command Actions
+The `voice_command_actions.py` module allows you to trigger automation based on recognized speech:
+
+- **Click by image**: Place a screenshot (e.g., `ok_button.png`) in your working directory and say "click by image ok_button.png".
+- **Open programs**: Say "open notepad" or "open chrome" to launch applications.
+- **Switch windows**: Say "switch window" or "alt tab" to cycle through open windows.
+- **Mouse actions**: Say "click", "double click", or "move to top left" for basic mouse control.
+
+You can extend `voice_command_actions.py` to add more custom commands as needed.
 
 ## Deployment / Packaging as Standalone
 To package this project as a standalone executable (e.g., for Windows):

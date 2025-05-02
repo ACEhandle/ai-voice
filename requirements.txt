@@ -4,3 +4,4 @@ torch
 sounddevice
 numpy
 pyttsx3
+pyautogui
